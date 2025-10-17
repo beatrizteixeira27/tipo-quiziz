@@ -2,6 +2,7 @@ body {
     font-family: Arial, sans-serif;
     text-align: center;
     padding: 20px;
+    overflow: hidden;
 }
 
 h1, h2 {
@@ -60,4 +61,34 @@ button:hover {
 
 #alternativas div:hover {
     background-color: #f1f1f1;
+}
+
+.confetes {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    pointer-events: none;
+    z-index: 9999;
+}
+
+.confete {
+    position: absolute;
+    border-radius: 50%;
+    width: 10px;
+    height: 10px;
+    background-color: random;
+    animation: cair 2s forwards;
+}
+
+@keyframes cair {
+    0% {
+        transform: translateY(-50px);
+        opacity: 1;
+    }
+    100% {
+        transform: translateY(100vh);
+        opacity: 0;
+    }
 }
