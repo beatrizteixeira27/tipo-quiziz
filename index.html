@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quiz de Português e Matemática</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="inicio">
+        <h1>Bem-vindo ao Quiz!</h1>
+        <label for="nome">Digite seu nome:</label>
+        <input type="text" id="nome" placeholder="Seu nome" />
+        <button onclick="iniciarQuiz()">Iniciar</button>
+    </div>
+
+    <div id="quiz" style="display: none;">
+        <h2 id="pergunta"></h2>
+        <div id="alternativas">
+            <!-- Alternativas serão carregadas aqui -->
+        </div>
+        <button onclick="proximaPergunta()">Próxima Pergunta</button>
+    </div>
+
+    <div id="ranking" style="display: none;">
+        <h2>Ranking</h2>
+        <ul id="rankingLista">
+            <!-- Ranking será exibido aqui -->
+        </ul>
+        <button onclick="reiniciarQuiz()">Jogar Novamente</button>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
