@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quiz de Português e Matemática</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            padding: 20px;
+            color: #333;
+        }
+        h1 {
+            text-align: center;
+            color: #4CAF50;
+        }
+        .quiz-container {
+            max-width: 600px;
+            margin: 0 auto;
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        .question {
+            margin-bottom: 20px;
+        }
+        .question p {
+            font-size: 18px;
+            margin-bottom: 10px;
+        }
+        .alternativas {
+            list-style-type: none;
+            padding: 0;
+        }
+        .alternativas li {
+            margin: 10px 0;
+        }
+        .alternativas input {
+            margin-right: 10px;
+        }
+        button {
+            display: block;
+            width: 100%;
+            padding: 10px;
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 16px;
+        }
+        button:hover {
+            background-color: #45a049;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>Quiz de Português e Matemática</h1>
+
+    <div class="quiz-container">
+        <!-- Perguntas de Português -->
+        <div class="question">
+            <p>1. Qual é a forma correta da palavra?</p>
+            <ul class="alternativas">
+                <li><input type="radio" name="q1" value="a"> A) Arvore</li>
+                <li><input type="radio" name="q1" value="b"> B) Árvore</li>
+                <li><input type="radio" name="q1" value="c"> C) Arvoré</li>
+                <li><input type="radio" name="q1" value="d"> D) Árrvore</li>
+            </ul>
+        </div>
+
+        <div class="question">
+            <p>2. Qual a forma correta de se escrever o plural de "café"?</p>
+            <ul class="alternativas">
+                <li><input type="radio" name="q2" value="a"> A) Cafés</li>
+                <li><input type="radio" name="q2" value="b"> B) Cafés</li>
+                <li><input type="radio" name="q2" value="c"> C) Cafées</li>
+                <li><input type="radio" name="q2" value="d"> D) Caféis</li>
+            </ul>
+        </div>
+
+        <!-- Outras perguntas de português -->
+
+        <!-- Perguntas de Matemática -->
+        <div class="question">
+            <p>11. Qual é a soma de 5 + 3?</p>
+            <ul class="alternativas">
+                <li><input type="radio" name="q11" value="a"> A) 7</li>
+                <li><input type="radio" name="q11" value="b"> B) 8</li>
+                <li><input type="radio" name="q11" value="c"> C) 9</li>
+                <li><input type="radio" name="q11" value="d"> D) 6</li>
+            </ul>
+        </div>
+
+        <div class="question">
+            <p>12. Quanto é 6 x 7?</p>
+            <ul class="alternativas">
+                <li><input type="radio" name="q12" value="a"> A) 42</li>
+                <li><input type="radio" name="q12" value="b"> B) 40</li>
+                <li><input type="radio" name="q12" value="c"> C) 44</li>
+                <li><input type="radio" name="q12" value="d"> D) 48</li>
+            </ul>
+        </div>
+
+        <!-- Outras perguntas de matemática -->
+
+        <!-- Botão para enviar respostas -->
+        <button onclick="submitQuiz()">Enviar Respostas</button>
+    </div>
+
+    <script>
+        // Função para enviar o quiz (ainda não implementada)
+        function submitQuiz() {
+            alert('As respostas foram enviadas!');
+        }
+    </script>
+</body>
+</html>
